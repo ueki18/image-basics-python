@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-img = cv2.imread("sample.jpg", cv2.IMREAD_GRAYSCALE)
+img = cv2.imread("input.jpg", cv2.IMREAD_GRAYSCALE)
 
 # コントラストを1.5倍にする
 img_high_contrast = cv2.convertScaleAbs(img, alpha=1.5, beta=0)
