@@ -4,8 +4,8 @@
 import cv2
 import numpy as np
 
-img1 = cv2.imread("apple.jpg")
-img2 = cv2.imread("orange.jpg")
+img1 = cv2.imread("apple.png")
+img2 = cv2.imread("orange.png")
 
 # alpha を 0.0, 0.2, 0.4, 0.6, 0.8, 1.0 の6段階で変化させる
 alphas = [0.0, 0.2, 0.4, 0.6, 0.8, 1.0]
