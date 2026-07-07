@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-img = cv2.imread("sample.jpg", cv2.IMREAD_GRAYSCALE)
+img = cv2.imread("input.jpg", cv2.IMREAD_GRAYSCALE)
 
 # 明るくする (+50)，暗くする (-50)
 img_bright = cv2.add(img, 50)
