@@ -1,6 +1,6 @@
 import cv2
 
-img = cv2.imread("low_contrast.png", cv2.IMREAD_GRAYSCALE)
+img = cv2.imread("sample.png", cv2.IMREAD_GRAYSCALE)
 
 # CLAHEオブジェクトの生成
 # clipLimit: コントラストの制限値, tileGridSize: 分割するブロックのサイズ
