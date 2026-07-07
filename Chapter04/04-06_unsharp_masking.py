@@ -1,6 +1,6 @@
 import cv2
 
-img = cv2.imread("cityscape2.png")
+img = cv2.imread("cityscape.png")
 
 # ボケ画像を作成
 blur = cv2.GaussianBlur(img, (9, 9), 10.0)
