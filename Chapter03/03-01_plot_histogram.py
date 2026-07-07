@@ -2,7 +2,7 @@ import cv2
 import matplotlib.pyplot as plt
 
 # グレースケールで画像を読み込む
-img_gray = cv2.imread("low_contrast.png", cv2.IMREAD_GRAYSCALE)
+img_gray = cv2.imread("sample.png", cv2.IMREAD_GRAYSCALE)
 
 # ヒストグラムの計算
 # 引数: [画像], [チャンネル], マスク, [ビン数], [範囲]
