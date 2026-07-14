@@ -5,8 +5,7 @@ img = cv2.imread("input.jpg", cv2.IMREAD_GRAYSCALE)
 
 gamma = 1.5
 # 高速化のために「ルックアップテーブル(LUT)」を作成
-invGamma = 1.0 / gamma
-table = np.array([((i / 255.0) ** invGamma) * 255
+table = np.array([((i / 255.0) ** gamma) * 255
                   for i in np.arange(0, 256)]).astype("uint8")
 
 # LUTを用いて画像全体を一括変換
