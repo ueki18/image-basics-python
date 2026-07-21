@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-width, height = 256, 192
+height, width = 192, 256
 img = np.zeros((height, width, 3), np.uint8)  # カラー画像を作成
 for y in range(height):
     for x in range(width):
