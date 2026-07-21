@@ -25,6 +25,7 @@ while True:
     mag, ang = cv2.cartToPolar(flow[..., 0], flow[..., 1])
 
     # 角度を色相(0-179)に，大きさを明度(0-255)に正規化して反映
+    # OpenCVのHueは8bit(0-179)で360度を表現するため，度数法の角度(0-360)を2で割る
     hsv[..., 0] = ang * 180 / np.pi / 2
     hsv[..., 2] = cv2.normalize(mag, None, 0, 255, cv2.NORM_MINMAX)
 
