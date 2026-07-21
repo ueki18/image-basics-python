@@ -5,7 +5,7 @@ import json
 import urllib.request
 
 # ImageNetで事前学習済みのResNet-50を読み込み，推論モードにする
-model = models.resnet50(pretrained=True)
+model = models.resnet50(weights=models.ResNet50_Weights.DEFAULT)
 model.eval()
 
 # 学習時と同じ前処理（サイズ変更・正規化）を行う
