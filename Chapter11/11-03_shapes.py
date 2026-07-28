@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-width, height = 640, 480
+height, width = 480, 640
 image = np.ones((height, width, 3), dtype=np.uint8) * 255
 
 # 線を描く
