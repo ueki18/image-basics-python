@@ -5,7 +5,7 @@ import cv2
 import numpy as np
 import random
 
-width, height = 640, 480
+height, width = 480, 640
 num_particles = 100
 
 # パーティクルの位置をランダムに初期化
