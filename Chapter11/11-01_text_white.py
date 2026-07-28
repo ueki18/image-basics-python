@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 # 画像のサイズ
-width, height = 640, 480
+height, width = 480, 640
 
 # 白い背景の画像を作成
 image = np.ones((height, width, 3), dtype=np.uint8) * 255
